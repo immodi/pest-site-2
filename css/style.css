@@ -815,9 +815,8 @@ footer p {
     width: 100%;
   }
 
-  .reviews {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
+  .navbar-brand {
+    font-size: medium !important;
   }
 }
 
@@ -952,9 +951,15 @@ footer p {
   justify-content: space-around;
   align-items: center;
   height: fit-content;
-  position: absolute;
-  bottom: -12rem;
+  position: relative;
   min-height: fit-content;
+}
+
+.about-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 /* Contact Us Section Styling */
@@ -1037,9 +1042,17 @@ footer p {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
 
-  position: absolute;
-  bottom: -2rem;
-  right: -4rem;
+  position: relative;
+  top: 1rem;
+}
+
+.cont {
+  width: 100%;
+  min-width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .smoke-machine {
@@ -1107,7 +1120,29 @@ footer p {
   font-style: normal;
 }
 
-.reviews {
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr;
+.review-container {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.review {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 30rem;
+  text-align: center;
+}
+
+.navbar {
+  max-width: 100dvw !important;
+}
+
+.navbar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
