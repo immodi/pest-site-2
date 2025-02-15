@@ -814,6 +814,11 @@ footer p {
   .container {
     width: 100%;
   }
+
+  .reviews {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
 }
 
 @media (max-width: 980px) {
@@ -1100,4 +1105,9 @@ footer p {
   font-optical-sizing: auto;
   font-weight: normal;
   font-style: normal;
+}
+
+.reviews {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
 }
